@@ -28,7 +28,7 @@
 
 <body>
 	<div class="overlay"></div>
-	<!--div class="page-loader-wrapper">
+	<div class="page-loader-wrapper">
 		<div class="loader">
 			<div class="preloader">
 				<div class="spinner-layer pl-blue">
@@ -42,24 +42,24 @@
 			</div>
 			<p>Пожалуйста подождите...</p>
 		</div>
-	</div-->
+	</div>
 
 
 
 
 	<section class="sidebar-wrapper">
-		<div class="sidebar" id="leftsidebar">
+		<div class="sidebar" id="leftSidebar">
 				<div class="logo">
-					<a href="/"><i class="fa fa-paw"></i> </a>
+					<a href="/"><img src="img/Logo.png" alt=""></a>
 				</div>
 				<div class="menu">
 					<ul>
-						<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
-						<li><a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i> <span>Обсуждения</span></a></li>
-						<li><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> <span>Мои подписки</span></a></li>
+						<li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
+						<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Обсуждения</span></a></li>
+						<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Подписки</span></a></li>
 						<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
-						<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Отзывы</span></a></li>
-						<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> <span>Поддержка</span></a></li>
+						<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Отзывы</span></a></li>
+						<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><!--i class="fa fa-question-circle" aria-hidden="true"></i--> <span>Поддержка</span></a></li>
 					</ul>
 				</div>
 		</div>
@@ -70,14 +70,22 @@
 		<div class="nav-bar clearfix">
 			<div class="menu-toggle "><i class="fa fa-bars"></i></div>
 			<ul class="nav-profile">
-				<li><a href="#" class="natific"><i class="fa fa-bell-o" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
-				<li><a href="#" class="message"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span class="notification-ring green">0</span></a></li>
-				<li><a href="#" class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span class="notification-ring warning">9</span></a></li>
+				<li><a href="#" class="natific"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
+				<li><a href="#" class="message"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="notification-ring">0</span></a></li>
+				<li><a href="#" class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span class="notification-ring">9</span></a></li>
+				<li class="user-menu">
+					<a href="#"> Максим Долматов <i class="fa fa-angle-down" aria-hidden="true"></i> <span class="user-img"><img src="/img/default_photo.png" alt="Admin"></span></a>
+				</li>
 			</ul>
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-12">Тут контент страницы</div>
+				<div class="col-md-10 content-wrapper">
+					Тут контент
+				</div>
+				<div class="col-md-2 content-rigthBar">
+					Тут sideBar
+				</div>
 			</div>
 		</div>
 	</div>
