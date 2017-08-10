@@ -5,6 +5,13 @@ window.onload = function(){
 $(document).ready( function(){
   $("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+	$(".tab_item").not(":first").hide();
+	$(".wrapperTabs .tab").click(function() {
+		$(".wrapperTabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+
   $.Admin.leftSideBar.activate();
 });
 
@@ -13,7 +20,7 @@ $.Admin = {};
 
 $.Admin.options = {
 	leftSidebar: {
-		hiddenSize: 640 // на каком разрешении скрывать меню
+		hiddenSize: 700 // на каком разрешении скрывать меню
 	},
 }
 
