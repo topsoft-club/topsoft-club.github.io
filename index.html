@@ -53,9 +53,40 @@
 					<a href="/"><img src="img/Logo.png" alt=""></a>
 				</div>
 				<div class="menu">
-					<ul>
+					<ul class="main-menu">
 						<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
-						<li class="active"><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Форум</span></a></li>
+						<li class="active"><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Форум</span></a>
+							<ul class="dopMenu">
+								<h3 class="title">Выберите раздел</h3>
+								<ul>
+									<span class="nameCat">Администрация</span>
+									<li><a href="#">Правила форума</a></li>
+									<li><a href="#">Новости форума</a></li>
+									<li><a href="#">Вакансии / Объявления</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface RU</span>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Информация о Crybot VIP</a></li>
+									<li><a href="#">Сообщите об ошибке</a></li>
+									<li><a href="#">Совместная игра WF RU</a></li>
+									<li><a href="#">Флудилка</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface BR</span>
+									<li><a href="#">Informações de compra</a></li>
+									<li><a href="#">Download e informações sobre nossos produtos</a></li>
+									<li><a href="#">Relatar bugs e erros / Dúvidas</a></li>
+									<li><a href="#">Off-Topic</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface EU/NA</span>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Информация о Crybot</a></li>
+									<li><a href="#">Вопросы</a></li>
+								</ul>					
+							</ul>
+						</li>
 						<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Подписки</span></a></li>
 						<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
 						<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Отзывы</span></a></li>
@@ -77,7 +108,7 @@
 				
 				
 				<li class="user-menu">
-					<a href="#"> Максим Долматов <i class="fa fa-angle-down" aria-hidden="true"></i> <span class="user-img"><img src="/img/profile-img/3.png" alt="Admin"></span></a>
+					<a href="#"> Максим Долматов <span class="user-img"><img src="/img/profile-img/3.png" alt="Admin"></span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 				</li>
 			</ul>
 		</div>
@@ -89,7 +120,8 @@
 								<span class="tab">Все посты</span>
 								<span class="tab">Новые посты</span>
 								<span class="tab">Популярные посты</span>   
-								<span class="tab">Мои посты</span>      
+								<span class="tab">Мои посты</span>
+								<a href="#" class="btn-newPost">Создать тему <span>+</span></a>   
 							</div>
 							<div class="tab_content">
 								<div class="tab_item posts">
