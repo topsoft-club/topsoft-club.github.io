@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Главная | Администрирование сайта</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="imgpath/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-blue">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<p>Пожалуйста подождите...</p>
+		</div>
+	</div>
+
+
+
+
+	<section class="sidebar-wrapper">
+		<div class="sidebar" id="leftSidebar">
+				<div class="logo">
+					<a href="/"><img src="img/Logo.png" alt=""></a>
+				</div>
+				<div class="menu">
+					<ul class="main-menu">
+						<li class="active"><a href="/"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
+						<li ><a href="/forum.html"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Форум</span></a>
+							<ul class="dopMenu">
+								<h3 class="title">Выберите раздел</h3>
+								<ul>
+									<span class="nameCat">Администрация</span>
+									<li><a href="#">Правила форума</a></li>
+									<li><a href="#">Новости форума</a></li>
+									<li><a href="#">Вакансии / Объявления</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface RU</span>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Информация о Crybot VIP</a></li>
+									<li><a href="#">Сообщите об ошибке</a></li>
+									<li><a href="#">Совместная игра WF RU</a></li>
+									<li><a href="#">Флудилка</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface BR</span>
+									<li><a href="#">Informações de compra</a></li>
+									<li><a href="#">Download e informações sobre nossos produtos</a></li>
+									<li><a href="#">Relatar bugs e erros / Dúvidas</a></li>
+									<li><a href="#">Off-Topic</a></li>
+								</ul>
+								<ul>
+									<span class="nameCat">Crybot для Warface EU/NA</span>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Информация о Crybot</a></li>
+									<li><a href="#">Вопросы</a></li>
+								</ul>					
+							</ul>
+						</li>
+						<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Подписки</span></a></li>
+						<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
+						<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Отзывы</span></a></li>
+						<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><!--i class="fa fa-question-circle" aria-hidden="true"></i--> <span>Поддержка</span></a></li>
+					</ul>
+				</div>
+		</div>
+	</section>
+
+
+	<div class="content">
+		<div class="nav-bar clearfix">
+			<div class="menu-toggle "><i class="fa fa-bars"></i></div>
+			<ul class="nav-profile">
+				<li><a href="#" class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span class="notification-ring">9</span></a></li>
+				<li><a href="#" class="natific"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
+				<li><a href="#" class="message"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="notification-ring">0</span></a></li>
+				
+				
+				
+				<li class="user-menu">
+					<a href="#"> Максим Долматов <span class="user-img"><img src="/img/profile-img/3.png" alt="Admin"></span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-10 content-wrapper">
+					<div class="wrapperTabs">
+							<div class="tabs">
+								<span class="tab">Все посты</span>
+								<span class="tab">Новые посты</span>
+								<span class="tab">Популярные посты</span>   
+								<span class="tab">Мои посты</span>
+								<a href="#" class="btn-newPost">Создать тему <span>+</span></a>   
+							</div>
+							<div class="tab_content">
+								<div class="tab_item posts">
+
+								</div>
+								<div class="tab_item">Содержимое 2</div>
+								<div class="tab_item">Содержимое 3</div>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-2 hidden-sm content-rigthBar">
+					Тут sideBar
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

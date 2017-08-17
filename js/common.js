@@ -3,7 +3,21 @@ window.onload = function(){
 }
 
 $(document).ready( function(){
-  $("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	$('.button-collapse').sideNav({
+			menuWidth: 90, // Default is 300
+			edge: 'left', // Choose the horizontal origin
+			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+			draggable: true, // Choose whether you can drag to open on touch screens,
+			onOpen: function(el) {
+			}, // Функция, вызываемая при открытии sideNav
+			onClose: function(el) {
+			}, // Функция, вызываемая при закрытии sideNav
+		}
+	);
+
+
+
+	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 	$(".tab_item").not(":first").hide();
 	$(".wrapperTabs .tab").click(function() {
@@ -12,15 +26,14 @@ $(document).ready( function(){
 	}).eq(0).addClass("active");
 
 
-  $.Admin.leftSideBar.activate();
+	$.Admin.leftSideBar.activate();
 });
 
 
 $.Admin = {};
-
 $.Admin.options = {
 	leftSidebar: {
-		hiddenSize: 960 // на каком разрешении скрывать меню
+		hiddenSize: 992
 	},
 }
 
@@ -29,24 +42,30 @@ $.Admin.leftSideBar = {
 		var configs = $.Admin.options.leftSidebar;
 
 		$(".menu-toggle").on("click", function(){
-			if($("html body").hasClass("ls-closed")){
+			if(document.documentElement.clientWidth <= configs.hiddenSize) {
 				$("html body").removeClass('ls-closed');
+				$('.button-collapse').sideNav('show'); 
+				return false;
 			}else{
-				$("html body").addClass('ls-closed');
+				if($("html body").hasClass("ls-closed")){
+					$("html body").removeClass('ls-closed');
+				}else{
+					$("html body").addClass('ls-closed');
+				}
 			}
 		});
 
-	$(window).resize(function() {
-		if(document.documentElement.clientWidth <= configs.hiddenSize) {
-			$("html body").addClass('ls-closed');
-		}else{
-			$("html body").removeClass('ls-closed');
-		}
-	});
-
+		$(window).resize(function() {
+			if(document.documentElement.clientWidth <= configs.hiddenSize) {
+				//$('.button-collapse').sideNav('hide'); 
+			}else{
+				$("html body").removeClass('ls-closed');
+			}
+		});
 
 	}
 }
+
 
 
 

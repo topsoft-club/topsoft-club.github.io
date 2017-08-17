@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Главная | Администрирование сайта</title>
+	<title>Главная | Top-Soft. сайта</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,63 +43,58 @@
 			<p>Пожалуйста подождите...</p>
 		</div>
 	</div>
+	
+	<menu id="leftMenu" class="fixed">
+		<header><a href="/"><img src="img/Logo.png" alt=""></a></header>
+		<li class="active"><a href="/"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
+		<li><a href="/forum.html"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Форум</span></a>
+			<ul class="dopMenu">
+				<h3 class="title">Выберите раздел</h3>
+				<ul>
+					<span class="nameCat">Администрация</span>
+					<li><a href="#">Правила форума</a></li>
+					<li><a href="#">Новости форума</a></li>
+					<li><a href="#">Вакансии / Объявления</a></li>
+				</ul>
+				<ul>
+					<span class="nameCat">Crybot для Warface RU</span>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Информация о Crybot VIP</a></li>
+					<li><a href="#">Сообщите об ошибке</a></li>
+					<li><a href="#">Совместная игра WF RU</a></li>
+					<li><a href="#">Флудилка</a></li>
+				</ul>
+				<ul>
+					<span class="nameCat">Crybot для Warface BR</span>
+					<li><a href="#">Informações de compra</a></li>
+					<li><a href="#">Download e informações sobre nossos produtos</a></li>
+					<li><a href="#">Relatar bugs e erros / Dúvidas</a></li>
+					<li><a href="#">Off-Topic</a></li>
+				</ul>
+				<ul>
+					<span class="nameCat">Crybot для Warface EU/NA</span>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Информация о Crybot</a></li>
+					<li><a href="#">Вопросы</a></li>
+				</ul>					
+			</ul>
+		</li>
+		<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Подписки</span></a></li>
+		<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
+		<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Отзывы</span></a></li>
+		<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>Поддержка</span></a></li>
+	</menu>
+
+	
 
 
-
-
-	<section class="sidebar-wrapper">
-		<div class="sidebar" id="leftSidebar">
-				<div class="logo">
-					<a href="/"><img src="img/Logo.png" alt=""></a>
-				</div>
-				<div class="menu">
-					<ul class="main-menu">
-						<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
-						<li class="active"><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Форум</span></a>
-							<ul class="dopMenu">
-								<h3 class="title">Выберите раздел</h3>
-								<ul>
-									<span class="nameCat">Администрация</span>
-									<li><a href="#">Правила форума</a></li>
-									<li><a href="#">Новости форума</a></li>
-									<li><a href="#">Вакансии / Объявления</a></li>
-								</ul>
-								<ul>
-									<span class="nameCat">Crybot для Warface RU</span>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">Информация о Crybot VIP</a></li>
-									<li><a href="#">Сообщите об ошибке</a></li>
-									<li><a href="#">Совместная игра WF RU</a></li>
-									<li><a href="#">Флудилка</a></li>
-								</ul>
-								<ul>
-									<span class="nameCat">Crybot для Warface BR</span>
-									<li><a href="#">Informações de compra</a></li>
-									<li><a href="#">Download e informações sobre nossos produtos</a></li>
-									<li><a href="#">Relatar bugs e erros / Dúvidas</a></li>
-									<li><a href="#">Off-Topic</a></li>
-								</ul>
-								<ul>
-									<span class="nameCat">Crybot для Warface EU/NA</span>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">Информация о Crybot</a></li>
-									<li><a href="#">Вопросы</a></li>
-								</ul>					
-							</ul>
-						</li>
-						<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Подписки</span></a></li>
-						<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
-						<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Отзывы</span></a></li>
-						<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><!--i class="fa fa-question-circle" aria-hidden="true"></i--> <span>Поддержка</span></a></li>
-					</ul>
-				</div>
-		</div>
-	</section>
-
-
-	<div class="content">
-		<div class="nav-bar clearfix">
-			<div class="menu-toggle "><i class="fa fa-bars"></i></div>
+	<main class="clearfix">
+		<nav class="clearfix">
+			<a href="javascript:void(0);" class="menu-toggle"><i class="fa fa-bars"></i></a>
+			<a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a>
+			<!--a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a-->
+			<!--a href="#" data-activates="leftMenu" id="leftMenu-toggle" class="menu-toggle button-collapse"><i class="fa fa-bars"></i></a>
+			<a href="#" class="menu-toggle-close"><i class="fa fa-arrow-left" aria-hidden="true"></i></a-->
 			<ul class="nav-profile">
 				<li><a href="#" class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span class="notification-ring">9</span></a></li>
 				<li><a href="#" class="natific"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
@@ -111,262 +106,11 @@
 					<a href="#"> Максим Долматов <span class="user-img"><img src="/img/profile-img/3.png" alt="Admin"></span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 				</li>
 			</ul>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-10 content-wrapper">
-					<div class="wrapperTabs">
-							<div class="tabs">
-								<span class="tab">Все посты</span>
-								<span class="tab">Новые посты</span>
-								<span class="tab">Популярные посты</span>   
-								<span class="tab">Мои посты</span>
-								<a href="#" class="btn-newPost">Создать тему <span>+</span></a>   
-							</div>
-							<div class="tab_content">
-								<div class="tab_item posts">
 
 
-									<div class="post post-new">
-										<h1 class="post-title">Возможность купить Individual VIP со скидкой! </h1>
-										<h4 class="post-desc">Вы можете пригласить друга, знакомого или найти...</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/1.png" alt=""></span>
-											<span class="post-userNick"><a href="#">GM!-_-pAnda</a></span>
-											<span class="post-dataCreate">Опубликовано 4 апреля</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Новости</span></a></li>
-												<li><a href="#"><span>Вопросы</span></a></li>
-												<li><a href="#"><span>Флудилка</span></a></li>
-											</ul>
-										</div>
+		</nav>
+	</main>
 
-										<div class="post-status">
-											<ul class="post-badge">
-												<li class="locked"><i class="fa fa-lock"></i></li>
-												<li class="pinned"><i class="fa fa-thumb-tack"></i></li>
-												<li class="Featured"><i class="fa fa-star"></i></li>
-											</ul>
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">452</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">53</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="post">
-										<h1 class="post-title">Если синий экран, решение</h1>
-										<h4 class="post-desc">Все дальнейшие действия необходимы только для windows 7...</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/3.png" alt=""></span>
-											<span class="post-userNick blue"><a href="#">MaximMRX</a></span>
-											<span class="post-dataCreate">Опубликовано 1 января</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Запуск</span></a></li>
-												<li><a href="#"><span>Инструкция</span></a></li>
-											</ul>
-										</div>
-
-										<div class="post-status">
-											<ul class="post-badge">
-												<li class="locked"><i class="fa fa-lock"></i></li>
-												<li class="pinned"><i class="fa fa-thumb-tack"></i></li>
-											</ul>
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">21</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">1</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="post">
-										<h1 class="post-title">Функция "Дамаг"</h1>
-										<h4 class="post-desc">Тестирование функции  "Дамаг"</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/2.png" alt=""></span>
-											<span class="post-userNick red"><a href="#">Admin</a></span>
-											<span class="post-dataCreate">Опубликовано 29 мая</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Информация</span></a></li>
-											</ul>
-										</div>
-
-										<div class="post-status">
-											<ul class="post-badge">
-												<li class="Featured"><i class="fa fa-star"></i></li>
-											</ul>
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">8574</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">952</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="post post-new">
-										<h1 class="post-title">Возможность купить Individual VIP со скидкой! </h1>
-										<h4 class="post-desc">Вы можете пригласить друга, знакомого или найти...</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/1.png" alt=""></span>
-											<span class="post-userNick"><a href="#">GM!-_-pAnda</a></span>
-											<span class="post-dataCreate">Опубликовано 4 апреля</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Новости</span></a></li>
-												<li><a href="#"><span>Вопросы</span></a></li>
-												<li><a href="#"><span>Флудилка</span></a></li>
-											</ul>
-										</div>
-
-										<div class="post-status">
-											
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">452</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">53</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="post">
-										<h1 class="post-title">Если синий экран, решение</h1>
-										<h4 class="post-desc">Все дальнейшие действия необходимы только для windows 7...</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/3.png" alt=""></span>
-											<span class="post-userNick blue"><a href="#">MaximMRX</a></span>
-											<span class="post-dataCreate">Опубликовано 1 января</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Запуск</span></a></li>
-												<li><a href="#"><span>Инструкция</span></a></li>
-											</ul>
-										</div>
-
-										<div class="post-status">
-											
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">21</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">1</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="post">
-										<h1 class="post-title">Функция "Дамаг"</h1>
-										<h4 class="post-desc">Тестирование функции  "Дамаг"</h4>
-										<div class="post-info">
-											<span class="post-userImg"><img src="/img/profile-img/2.png" alt=""></span>
-											<span class="post-userNick red"><a href="#">Admin</a></span>
-											<span class="post-dataCreate">Опубликовано 29 мая</span>
-											<ul class="post-tags">
-												<li><a href="#"><span>Информация</span></a></li>
-											</ul>
-										</div>
-
-										<div class="post-status">
-											
-											<ul class="post-stats">
-												<li>
-													<span class="stat-number">8574</span>
-													<span class="stat-type">Просмотры</span>
-												</li>
-												<li>
-													<span class="stat-number">952</span>
-													<span class="stat-type">Ответы</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-
-									
-
-
-
-
-
-								</div>
-								<div class="tab_item">Содержимое 2</div>
-								<div class="tab_item">Содержимое 3</div>
-							</div>
-					</div>
-				</div>
-				<div class="col-md-2 hidden-sm content-rigthBar">
-					Тут sideBar
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-	<!--div class="navbar">
-		<div class="container-fluid">
-			<div class="navbar__header">
-				<a href="javascript:void(0);" class="bars"></a>
-				<a class="brand" href="javascript:void(0);">AdminMRX - Material Design</a>
-			</div>
-		</div>
-	</div-->
-
-	<!--div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-1 col-md-1 left-bar">
-				<div class="logo">
-					<a href="/"><i class="fa fa-paw"></i> </a>
-				</div>
-
-				<div class="menu">
-					<ul>
-						<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</span></a></li>
-						<li><a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i> <span>Обсуждения</span></a></li>
-						<li><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> <span>Мои подписки</span></a></li>
-						<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Магазин</span></a></li>
-						<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Отзывы</span></a></li>
-						<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> <span>Поддержка</span></a></li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="col-lg-11 col-md-11 contents-page">
-				<div class="nav-bar">
-					<div class="menu-toggle"><i class="fa fa-bars"></i></div>
-				</div>
-			</div>
-		</div>
-	</div-->
-
-	
-
-
-	
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
