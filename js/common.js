@@ -15,6 +15,8 @@ $(document).ready( function(){
 		}
 	);
 
+	$('ul#content-tabs').tabs();
+
 
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
