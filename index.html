@@ -5,13 +5,13 @@
 
 	<meta charset="utf-8">
 
-	<title>Главная | Top-Soft. сайта</title>
+	<title>Title</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="imgpath/to/image.jpg">
+	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -24,25 +24,11 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
 </head>
 
 <body>
-	<div class="overlay"></div>
-	<div class="page-loader-wrapper">
-		<div class="loader">
-			<div class="preloader">
-				<div class="spinner-layer pl-blue">
-					<div class="circle-clipper left">
-						<div class="circle"></div>
-					</div>
-					<div class="circle-clipper right">
-						<div class="circle"></div>
-					</div>
-				</div>
-			</div>
-			<p>Пожалуйста подождите...</p>
-		</div>
-	</div>
 	
 	<menu id="leftMenu" class="fixed">
 		<header><a href="/"><img src="img/Logo.png" alt=""></a></header>
@@ -89,46 +75,111 @@
 		</ul>
 	</menu>
 
+	<main class="clearfix">
+			<nav class="clearfix">
+				<a href="javascript:void(0);" class="menu-toggle"><i class="fa fa-bars"></i></a>
+				<a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a>
+				<!--a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a-->
+				<!--a href="#" data-activates="leftMenu" id="leftMenu-toggle" class="menu-toggle button-collapse"><i class="fa fa-bars"></i></a>
+				<a href="#" class="menu-toggle-close"><i class="fa fa-arrow-left" aria-hidden="true"></i></a-->
+				<ul class="nav-profile">
+					<li><a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification-ring">1</span></a></li>
+					<li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
+
+					<li class="user-menu">
+						<a href="#">Говядинский Глеб <span class="user-img"><img src="/img/avatar_1.png" alt="Admin"></span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</nav>
+
+			<section id="content" class="container-fluid">
+			
+				<div class="row">
+					<div class="col-md-9 content-wrap">
+						<div class="homeSlider">
+
+						 <div class="slider slider-home">
+
+								<ul class="slides">
+									<li class="slideCss1">
+										<img src="img/slider/home/1.png"> 
+										<div class="caption css-1 left-align" >
+											<h3>Продление Individual VIP</h3>
+											<span>Как уже было не раз сказано при покупке индивидуала вы платите первую сумму за разработку индивидуального чита и в подарок дается 1 месяц бесплатного пользования</span>
+											<a href="#" class="button">Продлить сейчас</a>
+										</div>
+									</li>
+
+									<li class="slideCss1">
+										<img src="https://lorempixel.com/1400/340/technics/3"> 
+										<div class="caption css-1 left-align" >
+											<h3>Новое название</h3>
+											<span>Как уже было не раз сказано при покупке индивидуала вы платите первую сумму за разработку индивидуального чита и в подарок дается 1 месяц бесплатного пользования</span>
+											<a href="#" class="button mod">Продлить сейчас</a>
+										</div>
+									</li>
+
+								</ul>
+									<div class="controllBtn prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+									<div class="controllBtn next"> <i class="fa fa-angle-right " aria-hidden="true"></i> </div>
+							</div>
+						</div>
+
+
+
+
+
+					</div>
+					
+
+					<div class="col-md-3 hidden-xs content-rigthBar">
+						<div class="widgets">
+							<div class="widget status-po">
+								<h4 class="name">Статус ПО</h4>
+								<ul>
+									<li>
+										<div class="name-product">Ядро Topsoft Warface RU</div>
+										<label class="state-product color-green">Работает</label>
+										<div class="info-product">«Все функции и привязка полноценно функционируют. В скором времени будутдобавлены функции...»</div>
+										<div class="links">
+											<a href="#" class="more">Развернуть</a>
+											<a href="#" class="shop">Магазин</a>
+										</div>
+									
+									</li>
+									<li>
+										<div class="name-product">Aimbot By Robot</div>
+										<label class="state-product color-orange">На обновлении</label>
+										<div class="info-product">«Все функции и привязка полноценно функционируют. В скором времени будутдобавлены функции...»</div>
+										<div class="links">
+											<a href="#" class="more">Развернуть</a>
+											<a href="#" class="shop">Магазин</a>
+										</div>
+									
+									</li>
+									<li>
+										<div class="name-product">Простой EPS</div>
+										<label class="state-product color-blue">В разработке</label>
+										<div class="info-product">«Все функции и привязка полноценно функционируют. В скором времени будутдобавлены функции...»</div>
+										<div class="links">
+											<a href="#" class="more">Развернуть</a>
+											<a href="#" class="shop">Магазин</a>
+										</div>
+									
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</section>
+	</main>
 	
 
 
-	<main class="clearfix">
-		<nav class="clearfix">
-			<a href="javascript:void(0);" class="menu-toggle"><i class="fa fa-bars"></i></a>
-			<a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a>
-			<!--a href="javascript:void(0);" data-activates="leftMenu" class="button-collapse"></a-->
-			<!--a href="#" data-activates="leftMenu" id="leftMenu-toggle" class="menu-toggle button-collapse"><i class="fa fa-bars"></i></a>
-			<a href="#" class="menu-toggle-close"><i class="fa fa-arrow-left" aria-hidden="true"></i></a-->
-			<ul class="nav-profile">
-				<li><a href="#" class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span class="notification-ring">9</span></a></li>
-				<li><a href="#" class="natific"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification-ring">3</span></a></li>
-				<li><a href="#" class="message"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="notification-ring">0</span></a></li>
-
-				<li class="user-menu">
-					<a href="#"> Максим Долматов <span class="user-img"><img src="/img/profile-img/3.png" alt="Admin"></span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-				</li>
-			</ul>
-		</nav>
-
-		<section id="content" class="container-fluid">
-		
-			<div class="row">
-				<div class="col-md-10 content-wrap">
-					главная страница
-
-				</div>
-
-
-
-
-				<div class="col-md-2 hidden-sm content-rigthBar">content-rigthBar</div>
-			</div>
-			
-		</section>
-	</main>
-
-
+	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
