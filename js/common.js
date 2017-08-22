@@ -1,11 +1,18 @@
 $(function() {
 
+	$('ul.homeTabs').tabs();
 
 
 
+	$(".slider-home .controllBtn.prev").on("click", function(){
+			$('.slider-home').slider('prev');
+	});
+
+	 $(".card-like").click(function () {
+     $(this).toggleClass("my-like");
+   });
 
 
-	 
 
 	$.Admin.leftSideBar.activate();
 	$.Admin.slider.activate();
@@ -25,7 +32,7 @@ $.Admin.slider = {
 		$('.slider-home').slider({
 			height: 340,
 			transition: 340,
-			interval: 500000
+			interval: 5000
 		});
 		
 		$(".slider-home .controllBtn.prev").on("click", function(){
