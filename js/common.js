@@ -3,17 +3,12 @@ $(function() {
 	$('ul.homeTabs').tabs();
 
 
-
-	$(".slider-home .controllBtn.prev").on("click", function(){
-			$('.slider-home').slider('prev');
+	$(".card-like").click(function () {
+		$(this).toggleClass("my-like");
 	});
 
-	 $(".card-like").click(function () {
-     $(this).toggleClass("my-like");
-   });
 
-
-
+	$.Admin.raty.activate();
 	$.Admin.leftSideBar.activate();
 	$.Admin.slider.activate();
 });
@@ -25,6 +20,21 @@ $.Admin.options = {
 		hiddenSize: 992
 	},
 }
+
+
+$.Admin.raty = {
+	activate: function() {
+		$('.userInfo-commentRating').raty({
+			number: 5,
+			path: 'img/raty',
+			readOnly: true,
+			score: function() {
+				return $(this).attr('data-score');
+			}
+		});
+	}
+}
+
 
 $.Admin.slider = {
 	activate: function() {
@@ -46,7 +56,6 @@ $.Admin.slider = {
 
 	}
 }
-
 
 $.Admin.leftSideBar = {
 	activate: function() {
